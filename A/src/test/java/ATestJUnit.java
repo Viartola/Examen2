@@ -20,7 +20,7 @@ public class ATestJUnit {
 	}
   
     @Test  
-    public void dateGreaterThanAWeek() { 
+    public void TestdateGreaterThanAWeek() { 
     	Date fechaUno = new Date(0,4,1);
     	assertEquals(a.dateGreaterThanAWeek(fechaUno), true);
     	Date fechaDos = new Date(16,5,1);
@@ -34,7 +34,7 @@ public class ATestJUnit {
     } 
     
     @Test  
-    public void dateBigIsGreaterThanSmall() { 
+    public void TestdateBigIsGreaterThanSmall() { 
     	Date fechaUno = new Date(2016,04,20);
     	Date fechaDos = new Date(2016,05,26);
     	assertEquals(a.dateBigIsGreaterThanSmall(fechaUno, fechaDos), true);
@@ -47,7 +47,7 @@ public class ATestJUnit {
     }  
     
     @Test  
-    public void valueIsDivisibleByNumber() { 
+    public void TestvalueIsDivisibleByNumber() { 
     	BigDecimal Uno = new BigDecimal(4);
     	BigDecimal Dos = new BigDecimal(2);
     	BigDecimal resultado1 = new BigDecimal(0);
